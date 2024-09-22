@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <!-- Define que essa meta tag está configurando a viewport, que é a área visível da página web
+        content="width=device-width, initial-scale=1.0": Define que a largura da viewport deve ser igual à largura da tela do dispositivo (width=device-width) 
+        e que a escala inicial da página deve ser 1.0 (initial-scale=1.0), ou seja, sem zoom. 
+    -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atributos HTML</title>
+</head>
+<body>
+    <h1>Exemplos de Atributos HTML</h1>
+
+    <!-- Exemplo de itemprop -->
+    <section>
+        <h2>Exemplo de itemprop</h2>
+        <!-- itemscope e itemtype definem o escopo e o tipo do item -->
+        <div itemscope itemtype="http://schema.org/Person">
+            <!-- itemprop define propriedades de itens em microdados -->
+            <p><span itemprop="name">John Doe</span></p>
+            <p><span itemprop="jobTitle">Software Engineer</span></p>
+        </div>
+    </section>
+
+    <!-- Exemplo de hidden -->
+    <section>
+        <h2>Exemplo de hidden</h2>
+        <!-- hidden oculta o elemento -->
+        <p hidden>Este texto está oculto.</p>
+    </section>
+
+    <!-- Exemplo de draggable -->
+    <section>
+        <h2>Exemplo de draggable</h2>
+        <!-- draggable torna o elemento arrastável -->
+        <img src="senac.jpg" alt="Imagem" draggable="true">
+    </section>
+
+    <!-- Exemplo de contenteditable -->
+    <section>
+        <h2>Exemplo de contenteditable</h2>
+        <!-- contenteditable permite que o conteúdo do elemento seja editável -->
+        <p>Texto não editável</p>
+        <p contenteditable="true">Edite-me...</p>
+    </section>
+</body>
+</html>
